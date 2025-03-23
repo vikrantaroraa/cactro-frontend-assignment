@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -51,4 +51,12 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 })
-```
+``` -->
+
+## Cactro Assignment
+
+Reference images for the assignment
+
+<kbd><img src="src/assets/images/assignment-image-1.png" alt="canary-design-homepage-screenshot" style="border: 1px solid lightgrey; border-radius: 0px;" /></kbd>
+
+<kbd><img src="src/assets/images/assignment-image-2.png" alt="canary-design-homepage-screenshot" style="border: 1px solid lightgrey; border-radius: 0px;" /></kbd>
