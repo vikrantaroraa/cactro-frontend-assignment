@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 import styles from "./index.module.css";
 import Header from "src/components/Header";
 import workspaceImage from "src/assets/images/workspace-image.png";
@@ -23,6 +23,17 @@ const partnerCompanies = [
 ];
 
 const HomePage = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handleWatchVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play(); // Start playing the video
+      // Go fullscreen
+      videoRef.current.requestFullscreen().catch((err) => {
+        console.error("Error attempting to enable fullscreen:", err);
+      });
+    }
+  };
   return (
     <div className={styles["container"]}>
       <Header />
@@ -69,6 +80,7 @@ const HomePage = () => {
       <div className={styles["video-and-cta-section"]}>
         <div className={styles["video"]}>
           <video
+            ref={videoRef}
             id="my-player"
             className={styles["video-player"]}
             controls
@@ -110,7 +122,12 @@ const HomePage = () => {
             We have seen what the future can be. Now its time to decide what it
             will be.
           </div>
-          <button className={styles["watch-video-button"]}>WATCH VIDEO</button>
+          <button
+            className={styles["watch-video-button"]}
+            onClick={handleWatchVideo}
+          >
+            WATCH VIDEO
+          </button>
         </div>
         <CookiesPopup />
         <CustomerSupport />
