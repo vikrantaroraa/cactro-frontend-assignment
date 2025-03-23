@@ -1,0 +1,33 @@
+.notification-popup {
+  position: fixed;
+  top: 70px;
+  width: 1140px;
+  right: 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: #0064a0;
+  color: white;
+  border-radius: 100px;
+  height: 70px;
+}
+
+.close-popup {
+  cursor: pointer;
+}
+
+.notification-popup-hidden {
+  display: none;
+}
+
+.slack-hq-message {
+  font-weight: bold;
+}
+
+.cta-message {
+  font-weight: bold;
+  text-decoration: underline;
+}

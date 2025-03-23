@@ -1,0 +1,74 @@
+/* Header Styles */
+.header {
+  padding: 16px 40px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo */
+.logo {
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #4a154b;
+}
+
+.chevron {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Search Icon */
+.icon-search {
+  font-size: 20px;
+  cursor: pointer;
+  color: #616161;
+}
+
+.header-right svg {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide for mobile, can add hamburger later */
+  }
+
+  .header-right {
+    gap: 12px;
+  }
+}

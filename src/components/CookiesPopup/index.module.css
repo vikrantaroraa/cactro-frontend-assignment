@@ -1,0 +1,48 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  height: 250px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* X-offset, Y-offset, Blur, Spread */
+}
+
+.close-popup-btn {
+  width: 100%;
+  text-align: end;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.know-more-link {
+  font-size: 12px;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+
+.accept-cookies-btn {
+  background-color: #611f69;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container-hidden {
+  display: none;
+}
